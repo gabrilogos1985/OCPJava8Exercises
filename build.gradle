@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'mx.gps'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'org.projectlombok:lombok:1.16.18'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.apache.commons:commons-lang3:3.9'
+    testCompile("org.assertj:assertj-core:3.11.1")
+
+}
